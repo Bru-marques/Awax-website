@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
 }
-/*navigation*/
+
+
+/*navigation area*/
 header {
     height: 100px;
     background-color: #444242;
@@ -14,6 +15,96 @@ header {
 .header__menu {
     max-width: 1140px;
     margin: auto;
+    display: flex;
+    align-items: center;
     height: 100px;
-    background-color:aliceblue;
+    color: #fff;
+}
+.menu__logo {
+    width: 100px;
+}
+.logo__img {
+    width: 80px;
+    height: 80px;
+}
+.menu__nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__nav ul,
+.menu__nav li {
+    list-style: none;
+}
+.menu__nav ul{
+    display: flex;
+}
+.menu__nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #444242;
+}
+.menu__nav li a:hover,
+.menu__nav .active a {
+    border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+
+/*banner area*/
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #444242;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders {
+    width: 3000vw;
+    height: 100%;
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .slide__area {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.banner h1 span {
+    color: #b28756;
+    font-size: 50px;
+}
+.banner h2 {
+    text-transform:uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    background-color:#b28756;
+    padding: 10px 30px;;
+    border-radius: 20px;
 }
