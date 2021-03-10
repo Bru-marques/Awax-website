@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/*navigation*/
+header {
+    height: 100px;
+    background-color: #444242;
+}
+.header__menu {
+    max-width: 1140px;
+    margin: auto;
+    height: 100px;
+    background-color:aliceblue;
+}
