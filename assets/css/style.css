@@ -58,7 +58,9 @@ header {
     border-bottom: 5px solid #b28756;
     color: #ccc;
 }
-
+.menu__opener {
+    display: none;
+}
 
 .button {
     text-transform: uppercase;
@@ -638,4 +640,170 @@ footer .copyright {
     padding: 30px 0px;
     font-size: 12px;
     border-top: 1px solid #333;
+}
+
+/*Tablet*/
+@media (min-width: 450px) and (max-width: 800px) {
+    .menu__logo {
+        margin-left: 30px;
+    }
+    .menu__opener {
+        width: 40px;
+        margin-right: 30px;
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(44, 42, 42, 0.9);
+        width: 70vw;
+        height:calc(100vh - 100px);
+        right: 0;
+        bottom: 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .menu__nav li a {
+        border-bottom: none;
+        font-weight: 600;
+        font-size: 25px;
+        height: 70px;
+    }
+    .menu__nav .active a,
+    .menu__nav li a:hover {
+        border-bottom: none;
+        color:#b28756;
+    }   
+    .content__body.aboutus {
+        flex-direction: column;
+    }
+    .body__aboutus--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .body__aboutus--right {
+        width: auto;
+    }
+    .body__services {
+        flex-wrap: wrap;
+    }
+    .services__box {
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
+    .body__team {
+        width: 580px;
+    }
+    .footer {
+        padding-left: 30px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 450px) {
+    .menu__logo {
+        width: 60px;
+        margin-left: 30px;
+    }
+    .menu__opener {
+        width: 35px;
+        margin-right: 30px;
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(44, 42, 42, 0.9);
+        width: 60vw;
+        height:calc(100vh - 100px);
+        right: 0;
+        bottom: 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .menu__nav li a {
+        border-bottom: none;
+        font-weight: 600;
+        font-size: 20px;
+        height: 50px;
+    }
+    .menu__nav .active a,
+    .menu__nav li a:hover {
+        border-bottom: none;
+        color:#b28756;
+    }
+    .banner h1,   
+    .banner h1 span{
+        font-size: 30px;
+    }
+    .content__body.aboutus {
+        flex-direction: column;
+    }
+    .body__aboutus--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .body__aboutus--right {
+        width: auto;
+        margin: 0px 30px;
+    }
+    .body__aboutus--right img {
+        width: 100%;
+    }
+    .body__services {
+        flex-wrap: wrap;
+    }
+    .services__box {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+    .body__projects--filters {
+        margin: 0px 10px;
+    }
+    .body__team {
+        width: 280px;
+    }
+    .content__body.client .slide__area {
+        width: 400px;
+    }
+    .price__area .content__body {
+        flex-wrap: wrap;
+    }
+    .price__table {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .Premium__area {
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    .body__facts {
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    .contact__area .content__body {
+        margin: 0px 30px;
+        width: auto;
+    }
+    .contact__form {
+        flex-direction: column;
+    }
+    .contact__form input {
+        width: 100%;
+    }
+    .location__info {
+        width: 100%;
+    }
+    .footer {
+        padding-left: 30px;
+    }
+    .footer__area {
+        flex-direction: column;
+    }
 }
